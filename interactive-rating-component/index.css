@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #131518;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: #fff;
+  margin-bottom: 1.0625rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: #fff;
+  margin-bottom: 1.0625rem;
+}
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #969fad;
+}
+
+/* ===== THANK YOU PAGE ===== */
+.selected-rating-container p {
+  color: #fc7614;
+}
+
+/* ==========
+ FORM
+ ========== */
+form {
+  margin-top: 1.5rem;
+}
+
+.rating-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.rating-container input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.rating-container label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0109rem;
+  color: #7c8798;
+  background: #262e38;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+.rating-container label:hover {
+  color: #fff;
+  background: #7c8798;
+}
+
+.rating-container input[type="radio"]:checked + label {
+  color: #fff;
+  background: #fc7614;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  font-family: "Overpass";
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.1167rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #fc7614;
+  border: none;
+  border-radius: 1.4063rem;
+  outline: none;
+  padding: 0.75rem 0 0.9375rem 0;
+}
+
+.submit-btn:disabled,
+.submit-btn:disabled:hover {
+  color: #fff;
+  background: #7c8798;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+main {
+  width: 87.2%;
+  max-width: 20.4375rem;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 0.9375rem;
+  padding: 1.5rem 1.375rem 2rem 1.5rem;
+}
+
+.star-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #262e38;
+  margin-bottom: 1rem;
+}
+
+/* ===== THANK YOU PAGE ===== */
+main.thank-you-component-container {
+  padding: 2.125rem 1.5rem 2.3125rem 1.5rem;
+  text-align: center;
+  max-height: 360px;
+}
+
+.illustration-thank-you {
+  width: 9rem;
+  margin-bottom: 1.5rem;
+}
+
+.selected-rating-container {
+  display: block;
+  width: fit-content;
+  padding: 0.3125rem 0.75rem;
+  background: #262e38;
+  border-radius: 1.4063rem;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* =======================================================
+ MEDIA QUERIES
+ ======================================================= */
+
+@media (min-width: 48rem) {
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+    margin-bottom: 0.9375rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.1875rem;
+    margin-bottom: 0.9375rem;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+
+  /* ==========
+  FORM
+  ========== */
+  .rating-container {
+    margin-bottom: 2rem;
+  }
+
+  .rating-container input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+  .rating-container label {
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+    width: 3.1875rem;
+    height: 3.1875rem;
+    cursor: pointer;
+  }
+
+  .submit-btn {
+    font-size: 0.9375rem;
+    line-height: 1.1875rem;
+    letter-spacing: 0.125rem;
+    padding: 0.6875rem 0;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .submit-btn:hover {
+    color: #fc7614;
+    background: #fff;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  main {
+    width: unset;
+    max-width: 25.75rem;
+    border-radius: 1.875rem;
+    padding: 2rem 2.4375rem 2rem 2rem;
+    min-height: 26rem;
+  }
+
+  .star-icon-container {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.875rem;
+  }
+
+  /* ===== THANK YOU PAGE ===== */
+  main.thank-you-component-container {
+    padding: 2.8125rem 2.5rem 2.8125rem 2rem;
+    min-height: 26rem;
+  }
+
+  .illustration-thank-you {
+    width: 10.125rem;
+    margin-bottom: 2rem;
+  }
+
+  .selected-rating-container {
+    padding: 0.25rem 1.1875rem 0.25rem 1.25rem;
+    background: #262e38;
+    margin: 0 auto 2rem auto;
+  }
+}
