@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-T_RYlqhe9U]
 - Live Site URL: [https://lovely-taiyaki-49a119.netlify.app/]
 
 ## My process
