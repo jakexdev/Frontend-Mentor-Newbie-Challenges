@@ -139,7 +139,7 @@ main {
 /* ==========================================
  MEDIA QUERIES
  ========================================== */
-@media (min-width: 48rem) {
+@media (min-width: 34.375rem) {
   body {
     align-items: unset;
     margin-top: 6.375rem;

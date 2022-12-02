@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-card-B1c1j0QDtu]
 - Live Site URL: [https://majestic-axolotl-94b414.netlify.app/]
 
 ## My process
