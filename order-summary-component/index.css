@@ -143,7 +143,7 @@ main {
   body {
     align-items: unset;
     margin-top: 6.375rem;
-    background-size: 90rem 26.7081rem;
+    background-size: 100% 26.7081rem;
     background-image: url("images/pattern-background-desktop.svg");
   }
 
