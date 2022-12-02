@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Order summary card</title>
+  </head>
+  <body>
+    <main>
+      <img
+        src="images/illustration-hero.svg"
+        alt=""
+        class="hero-illustration"
+      />
+
+      <section class="component-text-container">
+        <h1>Order Summary</h1>
+
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div class="plan-container">
+          <div class="flex-item">
+            <img
+              src="images/icon-music.svg"
+              alt=""
+              class="music-icon"
+              id="music-icon"
+            />
+
+            <div class="plan-info-container">
+              <span class="plan-title" id="plan-title">Annual Plan</span>
+              <span class="plan-price" id="plan-price">$59.99/year</span>
+            </div>
+          </div>
+
+          <button class="change-plan-btn" id="change-plan-btn">Change</button>
+        </div>
+
+        <button class="payment-btn">Proceed to Payment</button>
+
+        <button class="cancel-order-btn">Cancel Order</button>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

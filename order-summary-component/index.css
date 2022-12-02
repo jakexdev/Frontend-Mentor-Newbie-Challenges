@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e0e7ff;
+  background-image: url("images/pattern-background-mobile.svg");
+  background-size: 100% 12.125rem;
+  background-repeat: no-repeat;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+h1 {
+  font-weight: 900;
+  font-size: 1.375rem;
+  line-height: 1.8125rem;
+  color: #1f2e55;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #717fa6;
+  margin-bottom: 1.5rem;
+}
+
+.plan-title {
+  display: block;
+  font-weight: 900;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #1f2e55;
+  margin-bottom: 0.1875rem;
+}
+
+.plan-price {
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #717fa6;
+}
+
+.change-plan-btn {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1.0625rem;
+  text-decoration-line: underline;
+  color: #382ae1;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.payment-btn {
+  display: block;
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #fff;
+  background: #382ae1;
+  box-shadow: 0 1.25rem 1.25rem rgba(56, 42, 225, 0.190291);
+  border: none;
+  border-radius: 0.6875rem;
+  outline: none;
+  padding: 0.9375rem 0;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.cancel-order-btn {
+  font-weight: 900;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  text-decoration: none;
+  color: #717fa6;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+main {
+  background: #fff;
+  box-shadow: 0 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
+  border-radius: 1.25rem;
+  width: 87.2%;
+  max-width: 20.4375rem;
+  max-height: 43.5625rem;
+}
+
+.hero-illustration {
+  display: block;
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.component-text-container {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f9ff;
+  border-radius: 0.6875rem;
+  padding: 1.0625rem 1rem 1rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+}
+
+.music-icon {
+  margin-right: 1.25rem;
+}
+
+/* ==========================================
+ MEDIA QUERIES
+ ========================================== */
+@media (min-width: 48rem) {
+  body {
+    align-items: unset;
+    margin-top: 6.375rem;
+    background-size: 90rem 26.7081rem;
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2.3125rem;
+    margin-bottom: 1.0625rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .plan-title {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .plan-price {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+
+  .change-plan-btn {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .change-plan-btn:hover {
+    color: #766cf1;
+    text-decoration: none;
+  }
+
+  .payment-btn {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .payment-btn:hover {
+    background: #766cf1;
+  }
+
+  .cancel-order-btn {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .cancel-order-btn:hover {
+    color: #ff5252;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  main {
+    max-width: 28.125rem;
+  }
+
+  .component-text-container {
+    padding: 2.8125rem 3rem 3rem 3rem;
+  }
+
+  .plan-container {
+    padding: 1.5625rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
