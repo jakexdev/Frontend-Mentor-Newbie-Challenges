@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-component-tbdPhxiilZ]
 - Live Site URL: [https://ornate-genie-a76dd8.netlify.app/]
 
 ## My process
