@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/skilled-elearning-landing-page-7HUKAhkeG5]
 - Live Site URL: [https://subtle-arithmetic-8e3951.netlify.app/]
 
 ## My process
