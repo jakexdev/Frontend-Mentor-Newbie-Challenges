@@ -492,6 +492,9 @@ footer {
   /* ==========
   FOOTER
   ========== */
+  footer {
+    padding: 2rem 0;
+  }
 
   .footer-flex-container {
     width: 77.0833333333%;
