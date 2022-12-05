@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/stats-preview-card-component-hTM9t-lnrj]
 - Live Site URL: [https://beamish-hotteok-c18ebf.netlify.app/]
 
 ## My process
