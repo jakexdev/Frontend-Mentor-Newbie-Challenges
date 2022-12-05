@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #0a0c1c;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+
+h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+h1 span.hightlight-text-purple {
+  color: #ab5cdb;
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-bottom: 2.5rem;
+}
+
+.stat-number {
+  display: block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.8125rem;
+  color: #fff;
+  margin-bottom: 0.125rem;
+}
+
+.stat-title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+main {
+  width: 87.2%;
+  max-width: 31.25rem;
+  background: #1b1937;
+  box-shadow: 0 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
+  border-radius: 0.5rem;
+  margin: 5.5rem auto;
+}
+
+.main-img-container {
+  background: #ab5cdb;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.main-img {
+  display: block;
+  width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+.main-text-content {
+  text-align: center;
+  padding: 2.5rem 1.9688rem 0.5rem;
+}
+
+.stat {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 76.5rem) {
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin-bottom: 1.5625rem;
+  }
+
+  p {
+    margin-bottom: 4.5rem;
+  }
+
+  /* ==========
+ LAYOUT
+ ========== */
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 69.375rem;
+    max-width: 69.375rem;
+  }
+
+  .main-img-container {
+    border-radius: 0 0.5rem 0.5rem 0;
+    width: 33.75rem;
+  }
+
+  .main-text-content {
+    text-align: left;
+    padding: 4.4375rem 5.9375rem 3.6875rem 4.4688rem;
+    width: 35.625rem;
+  }
+
+  .stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 21.9688rem;
+  }
+
+  .stat {
+    margin-bottom: 0;
+  }
+}
