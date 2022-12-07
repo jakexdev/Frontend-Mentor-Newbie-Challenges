@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/equalizer-landing-page-eGQ9fPTWOt]
 - Live Site URL: [https://sweet-gnome-f6cf16.netlify.app/]
 
 ## My process
