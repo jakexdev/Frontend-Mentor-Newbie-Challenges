@@ -29,11 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/screenshot-mobile.png)
+![](./screenshots/screenshot-desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/meet-landing-page-HXGmoYkc4Q]
 - Live Site URL: [https://jocular-tartufo-3969e6.netlify.app/]
 
 ## My process

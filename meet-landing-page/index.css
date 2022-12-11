@@ -142,7 +142,7 @@ span.download-version-main {
   width: 100%;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 /* ===== ABOUT ===== */
@@ -151,7 +151,7 @@ span.download-version-main {
   width: 87.2%;
   max-width: 28.125rem;
   margin: 0 auto 11rem auto;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .about-section span {
@@ -577,7 +577,7 @@ span.download-version-footer {
   .image-hero-right {
     display: block;
     width: 100%;
-    /* opacity: 0; */
+    opacity: 0;
   }
 
   .image-hero-right {
@@ -598,7 +598,7 @@ span.download-version-footer {
     max-width: 540px;
     margin: 0 auto;
     margin-top: 2.9375rem;
-    /* opacity: 0; */
+    opacity: 0;
   }
 
   .buttons-container {
@@ -657,6 +657,10 @@ span.download-version-footer {
   .footer-text-content p {
     width: 21.875rem;
     margin: 0 5.75rem 0 auto;
+  }
+
+  .download-btn-footer {
+    margin-top: 0.9375rem;
   }
 
   .download-btn-footer:hover {
