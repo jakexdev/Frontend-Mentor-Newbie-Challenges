@@ -307,6 +307,10 @@ label::placeholder {
 }
 
 @media (min-width: 90rem) {
+  body {
+    margin-bottom: 8.125rem;
+  }
+
   /* ==========
   TYPOGRAPHY
   ========== */
