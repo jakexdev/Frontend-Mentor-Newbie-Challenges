@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Pod request access landing page</title>
+  </head>
+  <body>
+    <img src="assets/desktop/logo.svg" alt="" class="logo" />
+    <main>
+      <h1>
+        Publish your podcasts
+        <span class="highlight-text-white">everywhere.</span>
+      </h1>
+
+      <p>
+        Upload your audio to Pod with a single click. We’ll then distribute your
+        podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
+        more!
+      </p>
+
+      <div class="flex-container">
+        <form>
+          <input type="text" id="email-input" placeholder="Email address" />
+          <label for="email-input" id="warning-label"
+            >Oops! Please check your email</label
+          >
+          <button class="request-access-btn" id="request-access-btn">
+            Request Access
+          </button>
+        </form>
+
+        <div class="company-logos-container">
+          <img
+            src="assets/desktop/spotify.svg"
+            alt="Spotify company logo"
+            class="spotify-logo"
+          />
+          <img
+            src="assets/desktop/apple-podcast.svg"
+            alt="Apple Pidcast company logo"
+            class="apple-logo"
+          />
+          <img
+            src="assets/desktop/google-podcasts.svg"
+            alt="Google Podcasts company logo"
+            class="google-logo"
+          />
+          <img
+            src="assets/desktop/pocket-casts.svg"
+            alt="Pocket Casts company logo"
+            class="pocket-casts-logo"
+          />
+        </div>
+      </div>
+    </main>
+
+    <picture>
+      <source
+        media="(min-width: 90rem)"
+        srcset="assets/desktop/image-host.jpg"
+      />
+      <source
+        media="(min-width: 48rem)"
+        srcset="assets/tablet/image-host.jpg"
+      />
+      <img src="assets/mobile/image-host.jpg" alt="" class="host-image" />
+    </picture>
+
+    <img
+      src="assets/desktop/bg-pattern-dots.svg"
+      alt=""
+      class="bg-pattern-dots"
+    />
+    <script src="index.js"></script>
+  </body>
+</html>

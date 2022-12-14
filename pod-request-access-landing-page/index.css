@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  background: #121725;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+h1 {
+  font-weight: 400;
+  font-size: 1.625rem;
+  line-height: 2.375rem;
+  text-transform: uppercase;
+  color: #54e6af;
+  margin-bottom: 1rem;
+}
+
+h1 span.highlight-text-white {
+  color: #fff;
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #c2cbe5;
+  margin-bottom: 2.0625rem;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+.host-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  top: 3.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main {
+  width: 87.2%;
+  max-width: 39.6875rem;
+  text-align: center;
+  z-index: 100;
+  position: absolute;
+  top: 10.9375rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.company-logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96.3302752294%;
+  margin: 0 auto 3rem auto;
+}
+
+.spotify-logo {
+  width: 17.7777777778%;
+}
+
+.apple-logo {
+  width: 14.2857142857%;
+}
+
+.google-logo {
+  width: 23.1746031746%;
+}
+
+.pocket-casts-logo {
+  width: 24.4444444444%;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-family: "Chivo";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: #fff;
+  background: #2c344b;
+  border: none;
+  border-radius: 1.75rem;
+  outline: none;
+  padding: 0.5625rem 0 0.5625rem 2rem;
+  margin: 0 auto 1rem auto;
+  width: 100%;
+  max-width: 20.4375rem;
+}
+
+input:focus {
+  background: #2c344b;
+}
+
+label {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  color: #fb3e3e;
+  text-align: left;
+  display: none;
+  margin: 0 auto;
+}
+
+label::placeholder {
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.request-access-btn {
+  font-family: "Chivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  color: #121725;
+  background: #54e6af;
+  box-shadow: 0 1.5625rem 1.25rem -1.25rem rgba(84, 230, 175, 0.497913);
+  border: none;
+  border-radius: 1.75rem;
+  outline: none;
+  padding: 0.5625rem 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 20.4375rem;
+}
+
+.bg-pattern-dots {
+  display: none;
+}
+
+.fade-in-fwd {
+  -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 48rem) {
+  body {
+    overflow: unset;
+  }
+
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.9375rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  .host-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30.6875rem;
+    min-height: 47.9375rem;
+    mix-blend-mode: unset;
+    opacity: 1;
+    mix-blend-mode: screen;
+  }
+
+  .logo {
+    top: 3.125rem;
+    left: 2.4375rem;
+    transform: unset;
+  }
+
+  main {
+    width: 39.6875rem;
+    max-width: unset;
+    text-align: left;
+    top: 16.125rem;
+    left: 2.4375rem;
+    transform: unset;
+    background: #121725;
+    padding: 5.8125rem 0 0 0;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .company-logos-container {
+    width: 84.4094488189%;
+    margin: 0 auto 0 0;
+  }
+
+  .spotify-logo {
+    width: 17.9104477612%;
+  }
+
+  .apple-logo {
+    width: 14.552238806%;
+  }
+
+  .google-logo {
+    width: 23.3208955224%;
+  }
+
+  .pocket-casts-logo {
+    width: 24.0671641791%;
+  }
+
+  form {
+    display: block;
+    position: relative;
+    width: 26.6875rem;
+    margin-bottom: 4rem;
+  }
+
+  input {
+    display: inline-block;
+    padding: 0.875rem 0 0.875rem 2rem;
+    margin: 0 auto 0.5rem auto;
+    width: 100%;
+    max-width: 26.6875rem;
+  }
+
+  label {
+    position: absolute;
+    left: 2rem;
+  }
+
+  .request-access-btn {
+    margin: 0;
+    width: 10.125rem;
+    max-width: 10.125rem;
+    position: absolute;
+    top: 0.3125rem;
+    right: 0.3125rem;
+  }
+
+  .bg-pattern-dots {
+    display: block;
+    position: absolute;
+    top: 57.5rem;
+    left: 1.875rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  body {
+    margin-bottom: 8.125rem;
+  }
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 3.25rem;
+    line-height: 3.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    width: 27.8125rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  .host-image {
+    top: 8.125rem;
+    width: 55.5rem;
+    min-height: 40rem;
+  }
+
+  .logo {
+    top: 6.375rem;
+    left: 10.3125rem;
+  }
+
+  main {
+    width: 45.1875rem;
+    top: 16.3125rem;
+    left: 10.3125rem;
+    padding: 5.5rem 3.625rem 0 0;
+  }
+
+  .company-logos-container {
+    width: 33.5rem;
+  }
+
+  .request-access-btn {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .request-access-btn:hover {
+    background: #b3ffe2;
+  }
+
+  .bg-pattern-dots {
+    top: 44.875rem;
+    left: unset;
+    right: 0;
+  }
+}
