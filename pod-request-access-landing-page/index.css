@@ -224,7 +224,6 @@ label::placeholder {
     min-height: 47.9375rem;
     mix-blend-mode: unset;
     opacity: 1;
-    mix-blend-mode: screen;
   }
 
   .logo {
@@ -307,9 +306,6 @@ label::placeholder {
 }
 
 @media (min-width: 90rem) {
-  body {
-    margin-bottom: 8.125rem;
-  }
   /* ==========
   TYPOGRAPHY
   ========== */

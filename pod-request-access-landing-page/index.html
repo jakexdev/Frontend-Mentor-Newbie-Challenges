@@ -16,7 +16,7 @@
     <title>Pod request access landing page</title>
   </head>
   <body>
-    <img src="assets/desktop/logo.svg" alt="" class="logo" />
+    <img src="assets/desktop/logo.svg" alt="Pod company logo" class="logo" />
     <main>
       <h1>
         Publish your podcasts
@@ -31,11 +31,20 @@
 
       <div class="flex-container">
         <form>
-          <input type="text" id="email-input" placeholder="Email address" />
+          <input
+            type="text"
+            id="email-input"
+            placeholder="Email address"
+            aria-label="Input your email address"
+          />
           <label for="email-input" id="warning-label"
             >Oops! Please check your email</label
           >
-          <button class="request-access-btn" id="request-access-btn">
+          <button
+            class="request-access-btn"
+            id="request-access-btn"
+            aria-label="Submit your email address"
+          >
             Request Access
           </button>
         </form>
@@ -65,23 +74,25 @@
       </div>
     </main>
 
-    <picture>
-      <source
-        media="(min-width: 90rem)"
-        srcset="assets/desktop/image-host.jpg"
-      />
-      <source
-        media="(min-width: 48rem)"
-        srcset="assets/tablet/image-host.jpg"
-      />
-      <img src="assets/mobile/image-host.jpg" alt="" class="host-image" />
-    </picture>
+    <div role="mainimage">
+      <picture>
+        <source
+          media="(min-width: 90rem)"
+          srcset="assets/desktop/image-host.jpg"
+        />
+        <source
+          media="(min-width: 48rem)"
+          srcset="assets/tablet/image-host.jpg"
+        />
+        <img
+          src="assets/mobile/image-host.jpg"
+          alt="Photo of Pod host Steve Peterson"
+          class="host-image"
+        />
+      </picture>
+    </div>
 
-    <img
-      src="assets/desktop/bg-pattern-dots.svg"
-      alt=""
-      class="bg-pattern-dots"
-    />
+    <div role="backgroundimage"></div>
     <script src="index.js"></script>
   </body>
 </html>
