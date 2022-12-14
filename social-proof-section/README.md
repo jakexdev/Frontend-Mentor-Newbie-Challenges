@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-3jg_UkayRr]
 - Live Site URL: [https://rococo-cucurucho-f1fa6d.netlify.app/]
 
 ## My process
