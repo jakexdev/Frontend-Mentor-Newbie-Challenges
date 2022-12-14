@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #fff;
+  background-image: url("images/bg-pattern-top-mobile.svg"),
+    url("images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 14.5rem, 100% 42.0625rem;
+  background-position: center top, center bottom;
+  min-height: 100vh;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+/* HERO SECTION */
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.0893rem;
+  color: #512051;
+  margin-bottom: 1.0625rem;
+}
+
+.hero-text-content p {
+  font-weight: 500;
+  font-size: 1.1875rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.0396rem;
+  color: #927b91;
+}
+
+span.rating {
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1rem;
+  color: #512051;
+}
+
+/* REVIEW SECTION */
+span.buyer-name {
+  display: block;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 1rem;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+span.buyer-title {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1rem;
+  color: #ee69a4;
+}
+
+blockquote {
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.019rem;
+  color: #fff;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+main {
+  width: 87.2%;
+  max-width: 28.125rem;
+  margin: 5.125rem auto 6.1875rem auto;
+}
+
+/* HERO SECTION */
+.hero-section {
+  text-align: center;
+  margin-bottom: 3.0625rem;
+}
+
+.hero-text-content {
+  margin-bottom: 2.4375rem;
+}
+
+.rating-component {
+  width: 100%;
+  background: #f7f2f7;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0 0.9375rem 0;
+}
+
+.rating-component:last-of-type {
+  margin-bottom: 0;
+}
+
+.star-container {
+  margin-bottom: 0.9519rem;
+}
+
+/* REVIEW SECTION */
+.review-component {
+  background: #512051;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 2.5rem 2rem 2.1875rem;
+}
+
+.review-component:last-of-type {
+  margin-bottom: 0;
+}
+
+.buyer-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.4375rem;
+}
+
+.review-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 1.4375rem;
+}
+
+/* ===================================================== 
+ MEDIA QUERIES
+ ===================================================== */
+@media (min-width: 90rem) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/bg-pattern-top-desktop.svg"),
+      url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 36.5rem 22.625rem, 75.3472222222% 42.0625rem;
+    background-position: left top, right bottom;
+  }
+
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  /* HERO SECTION */
+  h1 {
+    font-size: 3.5rem;
+    line-height: 3rem;
+    letter-spacing: -0.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-text-content p {
+    font-size: 1.1875rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.0396rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  main {
+    width: 77.0833333333%;
+    max-width: 69.375rem;
+    margin: 7.375rem auto 6.25rem auto;
+  }
+
+  /* HERO SECTION */
+  .hero-section {
+    text-align: left;
+    margin-bottom: 4.4375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-text-content {
+    margin-bottom: 0;
+    max-width: 27.8125rem;
+  }
+
+  .rating-components-container {
+    display: flex;
+    flex-direction: column;
+    width: 33.75rem;
+  }
+
+  .rating-component {
+    display: flex;
+    align-items: center;
+    width: 27.8125rem;
+    background: #f7f2f7;
+    padding: 1.3062rem 0 1.2581rem 2rem;
+  }
+
+  .rating-component:nth-of-type(2) {
+    align-self: center;
+  }
+
+  .rating-component:nth-of-type(3) {
+    align-self: flex-end;
+  }
+
+  .star-container {
+    margin: 0 2.0281rem 0 0;
+  }
+
+  /* REVIEW SECTION */
+  .review-components-container {
+    width: 100%;
+    height: 16.625rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buyer-profile {
+    margin-bottom: 1.9375rem;
+  }
+
+  .review-component {
+    max-width: 21.875rem;
+    max-height: 14.625rem;
+    margin-bottom: 0;
+  }
+
+  .review-component:nth-of-type(2) {
+    align-self: center;
+  }
+
+  .review-component:nth-of-type(3) {
+    align-self: flex-end;
+  }
+}
