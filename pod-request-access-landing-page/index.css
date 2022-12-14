@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@200;300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  font-weight: 300;
   font-family: "Chivo", sans-serif;
   background: #121725;
   position: relative;
@@ -22,7 +23,7 @@ body {
  TYPOGRAPHY
  ========== */
 h1 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.625rem;
   line-height: 2.375rem;
   text-transform: uppercase;
@@ -109,7 +110,7 @@ form {
 
 input {
   font-family: "Chivo";
-  font-weight: 400;
+  font-weight: bold;
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: #fff;
@@ -144,7 +145,7 @@ label::placeholder {
 .request-access-btn {
   font-family: "Chivo";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: #121725;

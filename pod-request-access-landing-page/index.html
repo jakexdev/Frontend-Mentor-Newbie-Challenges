@@ -74,32 +74,29 @@
       </div>
     </main>
 
-    <div role="mainimage">
-      <picture>
-        <source
-          media="(min-width: 90rem)"
-          srcset="assets/desktop/image-host.jpg"
-        />
-        <source
-          media="(min-width: 48rem)"
-          srcset="assets/tablet/image-host.jpg"
-        />
-        <img
-          src="assets/mobile/image-host.jpg"
-          alt="Photo of Pod host Steve Peterson"
-          class="host-image"
-        />
-      </picture>
-    </div>
-
-    <div role="backgroundimage">
-      <img
-        src="assets/desktop/bg-pattern-dots.svg"
-        alt=""
-        class="bg-pattern-dots"
-        aria-hidden="true"
+    <picture>
+      <source
+        media="(min-width: 90rem)"
+        srcset="assets/desktop/image-host.jpg"
       />
-    </div>
+      <source
+        media="(min-width: 48rem)"
+        srcset="assets/tablet/image-host.jpg"
+      />
+      <img
+        src="assets/mobile/image-host.jpg"
+        alt="Photo of Pod host Steve Peterson"
+        class="host-image"
+      />
+    </picture>
+
+    <img
+      src="assets/desktop/bg-pattern-dots.svg"
+      alt=""
+      class="bg-pattern-dots"
+      aria-hidden="true"
+    />
+
     <script src="index.js"></script>
   </body>
 </html>
