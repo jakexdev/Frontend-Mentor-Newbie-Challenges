@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/single-price-grid-component-KJFhkpOEDC]
 - Live Site URL: [https://amazing-sunburst-b4d5ea.netlify.app/]
 
 ## My process
