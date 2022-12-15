@@ -243,4 +243,8 @@ form {
     max-width: 33.75rem;
     margin: 0;
   }
+
+  form {
+    padding: 2.5rem;
+  }
 }
