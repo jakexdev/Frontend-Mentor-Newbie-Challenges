@@ -204,6 +204,10 @@ form {
     padding: 1.0625rem 0;
   }
 
+  input {
+    margin-bottom: 1.25rem;
+  }
+
   label {
     text-align: right;
   }
@@ -246,5 +250,6 @@ form {
 
   form {
     padding: 2.5rem;
+    height: 29.625rem;
   }
 }
