@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background: #e6eff5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+/* HEADER */
+h1 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
+  letter-spacing: -0.0156rem;
+  color: #2ab3b1;
+  margin-bottom: 1.5rem;
+}
+
+span.guarentee {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0117rem;
+  color: #c0df33;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.0109rem;
+  color: #9aa7be;
+}
+
+/* SUBSCRIPTION SECTION */
+h2 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  letter-spacing: -0.0141rem;
+  color: #fff;
+  margin-bottom: 1.125rem;
+}
+
+.subscription-info p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.0125rem;
+  color: #fff;
+  margin-bottom: 1.625rem;
+}
+
+span.price {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.3125rem;
+  letter-spacing: -0.025rem;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+span.per-month {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.0125rem;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-left: 0.6875rem;
+}
+
+.sign-up-btn {
+  display: block;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: -0.0125rem;
+  text-align: center;
+  color: #fff;
+  background: #c0df33;
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.0973011);
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem 0 0.875rem 0;
+  width: 100%;
+}
+
+/* WHY US SECTION */
+.why-us-section p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0109rem;
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+main {
+  width: 82.9333333333%;
+  max-width: 19.4375rem;
+  background: #fff;
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 81, 171, 0.148847);
+  border-radius: 0.3125rem;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.75rem 1.5rem 2rem;
+}
+
+.subscription-info {
+  background: #2ab3b1;
+  padding: 1.5rem;
+}
+
+.why-us-section {
+  background: #4abfbd;
+  padding: 1.5rem;
+}
+
+@media (min-width: 40.625rem) {
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  /* HEADER */
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.0187rem;
+  }
+
+  span.guarentee {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    letter-spacing: -0.0141rem;
+    margin-bottom: 0.6875rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.0125rem;
+  }
+
+  /* SUBSCRIPTION SECTION */
+  .subscription-info {
+    width: 50%;
+    border-radius: 0 0 0 0.5rem;
+  }
+
+  .subscription-info p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.0125rem;
+    color: #fff;
+    margin-bottom: 1.625rem;
+  }
+
+  /* WHY US SECTION */
+  .why-us-section {
+    width: 50%;
+    border-radius: 0 0 0.5rem 0;
+  }
+  .why-us-section p {
+    width: 11.5625rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  main {
+    width: 39.6875rem;
+    max-width: 39.6875rem;
+    background: #fff;
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 81, 171, 0.148847);
+    border-radius: 0.3125rem;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 2.5rem;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .subscription-info {
+    padding: 2.5rem;
+  }
+
+  .why-us-section {
+    padding: 2.5rem;
+  }
+}
