@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+h1 {
+  font-weight: 275;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.0104rem;
+  color: #4d4f62;
+  margin-bottom: 0.8125rem;
+}
+
+h1 span.bold-text {
+  font-weight: 600;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0065rem;
+  color: #4d4f62;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #4d4f62;
+  margin-bottom: 0.0625rem;
+}
+
+.component p {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  letter-spacing: 0.0056rem;
+  color: #4d4f62;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+header {
+  width: 82.9333333333%;
+  text-align: center;
+  max-width: 29.0625rem;
+  margin: 5.3125rem auto 4.75rem auto;
+}
+
+.components-grid {
+  width: 82.9333333333%;
+  max-width: 29.0625rem;
+  margin: 0 auto 4.875rem auto;
+}
+
+.component {
+  background: #fff;
+  box-shadow: 0 0.9375rem 1.875rem -0.6875rem rgba(131, 166, 210, 0.5);
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin: 0 auto 1.5625rem auto;
+  height: 13.6531rem;
+  width: 100%;
+  max-width: 19.4375rem;
+  position: relative;
+  padding: 1.4656rem 1.75rem 1.75rem 1.8125rem;
+}
+
+.component:last-of-type {
+  margin-bottom: 0;
+}
+
+.component::before {
+  content: "";
+  width: 100%;
+  height: 0.2219rem;
+  position: absolute;
+  top: -0.2219rem;
+  left: 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.supervisor-component::before {
+  background: #44d3d2;
+}
+
+.team-builder-component::before {
+  background: #ea5454;
+}
+
+.karma-component::before {
+  background: #fcae4a;
+}
+
+.calculator-component::before {
+  background: #549ef2;
+}
+
+.component-icon {
+  position: absolute;
+  top: 8.3406rem;
+  right: 1.75rem;
+  width: 3.5625rem;
+  height: 3.5625rem;
+}
+
+@media (min-width: 64rem) {
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3.375rem;
+    letter-spacing: 0.0156rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  .components-grid {
+    max-width: fit-content;
+    height: 31.25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 19.4375rem);
+    gap: 1.5625rem;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+  }
+
+  .component {
+    margin-bottom: 0;
+  }
+
+  .supervisor-component {
+    grid-column-start: 1;
+  }
+
+  .team-builder-component,
+  .karma-component {
+    grid-column-start: 2;
+  }
+
+  .calculator-component {
+    grid-column-start: 3;
+  }
+
+  .supervisor-component,
+  .calculator-component {
+    position: absolute;
+    top: 7.7188rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  h2 {
+    margin-bottom: 0.375rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  header {
+    margin: 5rem auto 4rem auto;
+    max-width: 33.75rem;
+  }
+  .components-grid {
+    max-width: 69.375rem;
+    height: 33.125rem;
+    grid-template-columns: repeat(3, 21.875rem);
+    gap: 1.875rem;
+  }
+
+  .component {
+    width: 21.875rem;
+    max-width: 21.875rem;
+    height: 15.375rem;
+    padding: 1.75rem 2rem 2rem 2rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .component:hover {
+    transform: scale(1.1);
+  }
+
+  .component::before {
+    height: 0.25rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .component:hover::before {
+    transform: scaleY(1.5);
+  }
+
+  .supervisor-component,
+  .calculator-component {
+    top: 8.75rem;
+  }
+
+  .component-icon {
+    top: 9.375rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
