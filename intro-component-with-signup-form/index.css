@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ff7979;
+  background-image: url("images/bg-intro-mobile.png");
+  background-position: center;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: -0.0182rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  height: 5rem;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  color: #fff;
+}
+
+h2 {
+  display: block;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.0167rem;
+  color: #fff;
+  background: #5e54a4;
+  box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.14688);
+  border-radius: 0.625rem;
+  padding: 1.125rem 4.125rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h2 span.bold-text-white {
+  font-weight: 700;
+}
+
+.input-container {
+  position: relative;
+}
+
+input {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.0156rem;
+  color: #3d3b48;
+  background: #fff;
+  border: 0.0625rem solid #dedede;
+  border-radius: 0.3125rem;
+  outline: none;
+  margin-bottom: 1rem;
+  padding: 0.9375rem 0 0.9375rem 1.2131rem;
+  width: 100%;
+}
+
+input::placeholder {
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+label {
+  display: none;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  text-align: left;
+  color: #ff7979;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
+
+.submit-btn {
+  display: block;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+  text-align: center;
+  letter-spacing: 0.0625rem;
+  color: #fff;
+  background: #38cc8b;
+  box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.0908818);
+  border: none;
+  border-radius: 0.3125rem;
+  outline: none;
+  padding: 0.9375rem 0;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+small {
+  display: block;
+  font-weight: 500;
+  font-size: 0.6875rem;
+  line-height: 1.3125rem;
+  text-align: center;
+  color: #bab7d4;
+  width: 15.5625rem;
+  margin: 0 auto;
+}
+
+a.terms-link {
+  font-weight: 700;
+  color: #ff7979;
+  text-decoration: none;
+  outline: none;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+header {
+  width: 87.2%;
+  max-width: 20.4375rem;
+  margin: 5.5rem auto 4rem auto;
+  text-align: center;
+}
+
+.form-container {
+  width: 87.2%;
+  max-width: 20.4375rem;
+  margin: 0 auto 4.25rem auto;
+}
+
+form {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0.5rem 0 rgba(0, 0, 0, 0.14688);
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 38.75rem) {
+  h1 {
+    font-size: 2.4375rem;
+    line-height: 2.8125rem;
+  }
+
+  header,
+  .form-container {
+    max-width: 33.75rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("images/bg-intro-desktop.png");
+  }
+
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 3.125rem;
+    line-height: 3.4375rem;
+    letter-spacing: -0.0326rem;
+    width: 26.875rem;
+    margin-bottom: 2rem;
+    height: 6.875rem;
+  }
+
+  h2 {
+    padding: 1.0625rem 0;
+  }
+
+  label {
+    text-align: right;
+  }
+
+  .submit-btn {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .submit-btn:hover,
+  .submit-btn:focus {
+    background: #77e2b3;
+  }
+
+  small {
+    width: 100%;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  .main-container {
+    display: flex;
+    width: 68.75rem;
+    max-width: 69.375rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header {
+    max-width: 32.8125rem;
+    margin: 0;
+    text-align: left;
+  }
+
+  .form-container {
+    max-width: 33.75rem;
+    margin: 0;
+  }
+}

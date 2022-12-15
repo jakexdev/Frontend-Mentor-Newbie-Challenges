@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <header>
+        <h1>Learn to code by watching others</h1>
+
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+
+      <div class="form-container">
+        <h2>
+          <span class="bold-text-white">Try it free 7 days</span>
+          then $20/mo. thereafter
+        </h2>
+
+        <form id="form">
+          <div class="input-container">
+            <input type="text" id="first-name-input" placeholder="First Name" />
+            <img
+              src="images/icon-error.svg"
+              data-icon="first-name-input"
+              alt=""
+              class="error-icon"
+            />
+            <label for="first-name-input" data-label="first-name-input"
+              >First Name must be at least 2 characters</label
+            >
+          </div>
+
+          <div class="input-container">
+            <input type="text" id="last-name-input" placeholder="Last Name" />
+            <img
+              src="images/icon-error.svg"
+              data-icon="last-name-input"
+              alt=""
+              class="error-icon"
+            />
+            <label for="last-name-input" data-label="last-name-input"
+              >Last Name must be at least 2 characters</label
+            >
+          </div>
+
+          <div class="input-container">
+            <input type="email" id="email-input" placeholder="Email Address" />
+            <img
+              src="images/icon-error.svg"
+              data-icon="email-input"
+              alt=""
+              class="error-icon"
+            />
+            <label for="email-input" data-label="email-input"
+              >Looks like this is not an email</label
+            >
+          </div>
+
+          <div class="input-container">
+            <input type="password" id="password-input" placeholder="Password" />
+            <img
+              src="images/icon-error.svg"
+              data-icon="password-input"
+              alt=""
+              class="error-icon"
+            />
+            <label for="password-input" data-label="password-input"
+              >Min. length 8 characters and must container 1 number and 1
+              special character</label
+            >
+          </div>
+
+          <button
+            class="submit-btn"
+            id="submit-btn"
+            aria-label="Form submit button to clain your free trial"
+          >
+            Claim your free trial
+          </button>
+
+          <small
+            >By clicking the button, you are agreeing to our
+            <a
+              href="#"
+              class="terms-link"
+              aria-label="View our terms and conditions"
+              >Terms and Services</a
+            ></small
+          >
+        </form>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
