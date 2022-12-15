@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/four-card-feature-section-WyJPB14y7e]
+- Live Site URL: [https://dynamic-sawine-4e1567.netlify.app/]
 
 ## My process
 

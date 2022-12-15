@@ -192,7 +192,7 @@ header {
     max-width: 69.375rem;
     height: 33.125rem;
     grid-template-columns: repeat(3, 21.875rem);
-    gap: 1.875rem;
+    gap: 34px 1.875rem;
   }
 
   .component {
