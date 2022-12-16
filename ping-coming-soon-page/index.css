@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* ==========
+ TYPOGRAPHY
+ ========== */
+h1 {
+  font-weight: 300;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  color: #969696;
+  margin-bottom: 0.9375rem;
+}
+
+h1 span.bold-text {
+  font-weight: 700;
+  color: #15202a;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  color: #15202a;
+  margin-bottom: 2rem;
+}
+
+input {
+  display: block;
+  font-family: "Libre Franklin";
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #15202a;
+  background: #fff;
+  border: 0.0625rem solid #c2d3ff;
+  box-shadow: 0 0 0.4375rem 0.1875rem rgba(0, 0, 0, 0.0001);
+  border-radius: 1.75rem;
+  outline: none;
+  padding: 0.625rem 0 0.625rem 2rem;
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+
+input::placeholder {
+  color: #b8c7ed;
+}
+
+label {
+  display: none;
+  position: absolute;
+  top: 2.625rem;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.0078rem;
+  color: #ff5466;
+}
+
+.notify-me-btn {
+  display: block;
+  font-family: "Libre Franklin";
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #fff;
+  background: #4c7bf3;
+  box-shadow: 0 0.3125rem 0.625rem 0.125rem rgba(76, 123, 243, 0.230414);
+  border: none;
+  border-radius: 1.75rem;
+  padding: 0.75rem 0;
+  width: 100%;
+}
+
+.social-media-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 1.9375rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #4c7bf3;
+  border: 0.0574rem solid rgba(76, 123, 243, 0.146498);
+  border-radius: 50%;
+}
+
+.facebook-link {
+  font-size: 1rem;
+}
+
+.twitter-link {
+  font-size: 1.25rem;
+}
+
+.instagram-link {
+  font-size: 1.1rem;
+}
+small {
+  font-weight: 300;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #969696;
+}
+
+/* ==========
+ LAYOUT
+ ========== */
+header {
+  width: 80.5333333333%;
+  max-width: 28.125rem;
+  margin: 5.0625rem auto 4.5rem auto;
+  text-align: center;
+}
+
+.logo {
+  width: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  width: 93.3774834437%;
+  margin: 0 auto;
+}
+
+.input-container {
+  position: relative;
+}
+
+.illustration-container {
+  width: 85.3333333333%;
+  max-width: 29.25rem;
+  margin: 0 auto 7.5rem auto;
+}
+
+.illustration-img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2.3125rem;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 7.5rem;
+  margin: 0 auto 1.6875rem auto;
+}
+
+@media (min-width: 48rem) {
+  /* ==========
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  input {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 1.125rem 0 1.125rem 1.875rem;
+    width: 26.3125rem;
+    margin: 0 1rem 0 0;
+    cursor: pointer;
+  }
+
+  label {
+    top: 3.875rem;
+    left: 1.875rem;
+    transform: unset;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.0094rem;
+  }
+
+  .notify-me-btn {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    padding: 1.1875rem 0 1.125rem 0;
+    width: 12.5rem;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .notify-me-btn:hover,
+  .notify-me-btn:focus {
+    background: #7096f5;
+  }
+
+  .social-media-link {
+    transition: all 0.4s ease-in-out;
+  }
+
+  .social-media-link:hover,
+  .social-media-link:focus {
+    color: #fff;
+    background: #4c7bf3;
+  }
+
+  small {
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+  }
+
+  /* ==========
+  LAYOUT
+  ========== */
+  header {
+    width: 44.5rem;
+    max-width: unset;
+    margin: 5rem auto 5.875rem auto;
+  }
+
+  .logo {
+    width: 5.625rem;
+    margin-bottom: 2.5rem;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .illustration-container {
+    width: 40rem;
+    max-width: unset;
+    margin: 0 auto 4.5rem auto;
+  }
+
+  footer {
+    padding-bottom: 3.0625rem;
+  }
+
+  .social-media-icons {
+    margin: 0 auto 1.5625rem auto;
+  }
+}
