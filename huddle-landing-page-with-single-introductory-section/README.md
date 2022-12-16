@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-HGt3M0G7Ap]
 - Live Site URL: [https://velvety-malasada-c6b982.netlify.app/]
 
 ## My process
