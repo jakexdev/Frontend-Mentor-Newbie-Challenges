@@ -96,24 +96,13 @@ label {
   justify-content: center;
   width: 2rem;
   height: 1.9375rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
   color: #4c7bf3;
   border: 0.0574rem solid rgba(76, 123, 243, 0.146498);
   border-radius: 50%;
 }
 
-.facebook-link {
-  font-size: 1rem;
-}
-
-.twitter-link {
-  font-size: 1.25rem;
-}
-
-.instagram-link {
-  font-size: 1.1rem;
-}
 small {
   font-weight: 300;
   font-size: 0.625rem;

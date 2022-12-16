@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]
+- Solution URL: [https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-xq321onJEl]
 - Live Site URL: [https://clever-faloodeh-922a32.netlify.app/]
 
 ## My process
