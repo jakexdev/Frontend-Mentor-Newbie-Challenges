@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #684bb1;
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* ========== 
+ TYPOGRAPHY
+ ========== */
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.register-btn {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  text-align: center;
+  color: #684bb1;
+  background: #fff;
+  box-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.269022);
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.7056rem 0 0.6694rem 0;
+  width: 66.2251655629%;
+  max-width: 12.5rem;
+  margin: 0 auto;
+}
+
+.social-media-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  color: #fff;
+  text-decoration: none;
+  border: 0.0499rem solid #fff;
+  border-radius: 50%;
+}
+
+/* ========== 
+ LAYOUT
+ ========== */
+/* HEADER */
+header {
+  width: 81.0666666667%;
+  max-width: 31.25rem;
+  margin: 2.3875rem auto 4.3625rem auto;
+}
+
+.logo {
+  width: 7.5rem;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 81.0666666667%;
+  max-width: 31.25rem;
+  margin: 0 auto 4rem auto;
+}
+
+.hero-img-container {
+  width: 97.3684210526%;
+  margin: 0 auto 3.75rem auto;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+}
+
+.hero-text-container {
+  width: 100%;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 6.5rem;
+}
+
+@media (min-width: 48rem) {
+  /* ========== 
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1.25rem;
+  }
+
+  p {
+    font-size: 1.0625rem;
+    line-height: 1.625rem;
+  }
+
+  /* ========== 
+  LAYOUT
+  ========== */
+
+  .logo {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  body {
+    background-image: url("images/bg-desktop.svg");
+    min-height: 100vh;
+    background-size: 82.4375rem 100%;
+  }
+  /* ========== 
+  TYPOGRAPHY
+  ========== */
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .register-btn {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    text-align: center;
+    box-shadow: 0.125rem 0.25rem 0.5625rem 0.1875rem rgba(0, 0, 0, 0.258633);
+    border-radius: 1.75rem;
+    padding: 0.8125rem 0 1rem 0;
+    width: 12.5rem;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .register-btn:hover,
+  .register-btn:focus {
+    color: #fff;
+    background: #e880e8;
+    outline: none;
+  }
+
+  .social-media-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    border: 0.0735rem solid #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .social-media-link:hover,
+  .social-media-link:focus {
+    color: #ff52c1;
+    border: 0.0735rem solid #ff52c1;
+    outline: none;
+  }
+
+  /* ========== 
+  LAYOUT
+  ========== */
+  /* HEADER */
+  header {
+    width: 79.6875rem;
+    max-width: 79.6875rem;
+    margin: 4rem auto 6.5rem auto;
+  }
+
+  .logo {
+    width: 12.5rem;
+  }
+
+  /* HERO SECTION */
+  .hero-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 79.6875rem;
+    height: 30.8125rem;
+    max-width: 79.6875rem;
+    margin: 0 auto 1.6875rem auto;
+  }
+
+  .hero-img-container {
+    width: 43.5rem;
+    margin: 0;
+  }
+
+  .hero-text-container {
+    width: 32.5rem;
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 79.6875rem;
+    margin: 0 auto;
+  }
+
+  .social-media-icons {
+    width: 9.5rem;
+  }
+}
