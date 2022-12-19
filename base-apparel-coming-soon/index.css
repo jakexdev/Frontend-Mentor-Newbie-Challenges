@@ -196,7 +196,7 @@ form {
   .logo-desktop {
     display: block;
     width: 9.875rem;
-    margin: 2.9319rem 0 8.5056rem 0;
+    margin: 69.41px 0 8.5056rem 0;
   }
 
   /* ==========
@@ -238,16 +238,18 @@ form {
   /* ==========
   LAYOUT
   ========== */
+  body {
+    background-image: url("images/bg-pattern-desktop.svg"),
+      linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
+    background-repeat: no-repeat;
+    background-size: 57.6388888889%;
+  }
   main {
     flex-direction: row;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
     height: 100vh;
-    background-image: url("images/bg-pattern-desktop.svg"),
-      linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
-    background-size: 100% 100%, 100% 100%;
-    background-repeat: no-repeat;
   }
 
   header {
@@ -258,7 +260,7 @@ form {
     text-align: left;
     width: 30.9027777778%;
     max-width: unset;
-    margin: 0 auto;
+    margin: 0 auto 0 10.3125rem;
   }
 
   form {
@@ -285,7 +287,6 @@ form {
 
   .main-img-container {
     width: 42.3611111111%;
-    /* height: 100vh; */
   }
 
   .main-img {
