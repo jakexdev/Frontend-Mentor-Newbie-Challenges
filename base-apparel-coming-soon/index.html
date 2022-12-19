@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img
+          src="images/logo.svg"
+          alt="Base Apparel logo"
+          class="logo-mobile"
+        />
+      </header>
+      <section class="text-content-container">
+        <img
+          src="images/logo.svg"
+          alt="Base Apparel logo"
+          class="logo-desktop"
+        />
+        <h1>We're <span class="bold-text__heading">coming soon</span></h1>
+
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form id="form">
+          <input type="email" id="email-input" placeholder="Email Address" />
+          <img
+            src="images/icon-error.svg"
+            alt="Error icon"
+            aria-disabled="true"
+            class="error-icon"
+            id="error-icon"
+          />
+          <label for="email-input" id="error-label"
+            >Please provide a valid email</label
+          >
+
+          <button
+            class="submit-btn"
+            id="submit-btn"
+            aria-label="Please click to submit your email address"
+          ></button>
+        </form>
+      </section>
+
+      <section class="main-img-container">
+        <picture>
+          <source media="(min-width: 90rem)" srcset="images/hero-desktop.jpg" />
+          <img
+            src="images/hero-mobile.jpg"
+            alt="Photo of Base Apparel fasion model"
+            class="main-img"
+          />
+        </picture>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
